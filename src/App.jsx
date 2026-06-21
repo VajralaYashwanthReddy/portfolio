@@ -47,28 +47,60 @@ function App() {
     </p>
 
     <div className="hero-buttons">
-      <a href="/resume.pdf" target="_blank" rel="noreferrer">
-        Resume
-      </a>
+  <a
+    href="/resume.pdf"
+    target="_blank"
+    rel="noreferrer"
+    className="resume-btn"
+  >
+    Resume
+  </a>
 
-      <a
-        href="https://github.com/VajralaYashwanthReddy"
-        target="_blank"
-        rel="noreferrer"
-      >
-        GitHub
-      </a>
+  <a
+    href="https://github.com/VajralaYashwanthReddy"
+    target="_blank"
+    rel="noreferrer"
+    className="github-btn"
+  >
+    GitHub
+  </a>
 
-      <a
-        href="https://linkedin.com/in/vajrala-yashwanth-reddy"
-        target="_blank"
-        rel="noreferrer"
-      >
-        LinkedIn
-      </a>
-    </div>
+  <a
+    href="https://linkedin.com/in/vajrala-yashwanth-reddy"
+    target="_blank"
+    rel="noreferrer"
+    className="linkedin-btn"
+  >
+    LinkedIn
+  </a>
   </div>
+</div>
 </section>
+
+<Section title="About Me">
+  <p>
+    Hello! I'm Vajrala Yashwanth Reddy, a Final Year Computer
+    Science Engineering student at Malla Reddy University.
+
+    <br /><br />
+
+    I specialize in Java Full Stack Development with hands-on
+    experience in Spring Boot, React, MySQL, Docker and REST API
+    development.
+
+    <br /><br />
+
+    Currently, I am enhancing my skills through internships and
+    practical projects while exploring cloud technologies,
+    DevOps practices and scalable software architecture.
+
+    <br /><br />
+
+    My goal is to start my career as a Software Engineer and
+    contribute to building impactful products that solve
+    real-world challenges.
+  </p>
+</Section>
 
       {/* Skills */}
       <Section title="Technical Skills">
