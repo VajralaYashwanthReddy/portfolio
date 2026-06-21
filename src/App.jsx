@@ -1,5 +1,6 @@
 
 import profile from "./assets/profile.jpg";
+import "./App.css";
 
 function App() {
   const skills = [
@@ -25,140 +26,49 @@ function App() {
       }}
     >
       {/* Hero */}
-      <section
-  style={{
-    maxWidth: "1300px",
-    width: "95%",
-    margin: "0 auto",
-    padding: "80px 20px",
-    display: "flex",
-    alignItems: "center",
-    gap: "60px",
-  }}
->
-        <img
-          src={profile}
-          alt="Profile"
-          style={{
-            width: "300px",
-            height: "300px",
-            borderRadius: "20px",
-            marginRight: "50px",
-            objectFit: "cover",
-            border: "5px solid #38bdf8",
-            boxShadow: "0 0 25px rgba(56,189,248,0.5)",
-          }}
-        />
+      <section className="hero">
+  <img src={profile} alt="Profile" className="profile-img" />
 
-        <div
-  style={{
-    flex: 1,
-  }}
->
-          <h1
-  style={{
-    fontSize: "58px",
-    marginBottom: "15px",
-    lineHeight: "1.1",
-  }}
->
-            Vajrala Yashwanth Reddy
-          </h1>
+  <div className="hero-content">
+    <h1>Vajrala Yashwanth Reddy</h1>
 
-          <h2
-            style={{
-              color: "#38bdf8",
-              marginBottom: "20px",
-            }}
-          >
-            Full Stack Developer | Java | Spring Boot | React | Docker
-          </h2>
+    <h2>
+      Full Stack Developer | Java | Spring Boot | React | Docker
+    </h2>
 
-          <p
-  style={{
-    fontSize: "18px",
-    lineHeight: "1.8",
-    maxWidth: "850px",
-  }}
->
-  Final Year Computer Science Engineering student at Malla Reddy University
-  with hands-on experience in Full Stack Development, Java, Spring Boot,
-  React, MySQL, Docker and REST API development. Passionate about building
-  scalable software solutions and continuously learning modern technologies.
-</p>
+    <p>
+      Final Year Computer Science Engineering student at Malla
+      Reddy University with hands-on experience in Java,
+      Spring Boot, React, MySQL, Docker and REST API development.
+    </p>
 
-          <p
-            style={{
-              color: "#94a3b8",
-              marginBottom: "20px",
-            }}
-          >
-            CGPA: 8.72 | Hyderabad, Telangana
-          </p>
+    <p className="location">
+      CGPA: 8.72 | Hyderabad, Telangana
+    </p>
 
-          <div>
-            <a
-              href="/resume.pdf"
-              target="_blank"
-              rel="noreferrer"
-              style={btnRed}
-            >
-              Resume
-            </a>
+    <div className="hero-buttons">
+      <a href="/resume.pdf" target="_blank" rel="noreferrer">
+        Resume
+      </a>
 
-            <a
-              href="https://github.com/VajralaYashwanthReddy"
-              target="_blank"
-              rel="noreferrer"
-              style={btnGreen}
-            >
-              GitHub
-            </a>
+      <a
+        href="https://github.com/VajralaYashwanthReddy"
+        target="_blank"
+        rel="noreferrer"
+      >
+        GitHub
+      </a>
 
-            <a
-              href="https://linkedin.com/in/vajrala-yashwanth-reddy"
-              target="_blank"
-              rel="noreferrer"
-              style={btnBlue}
-            >
-              LinkedIn
-            </a>
-          </div>
-        </div>
-      </section>
-
-      {/* About */}
-      <Section title="About Me">
-  <p
-    style={{
-      lineHeight: "1.8",
-      fontSize: "20px",
-    }}
-  >
-    Hello! I'm Vajrala Yashwanth Reddy, a Final Year Computer
-    Science Engineering student at Malla Reddy University.
-
-    <br /><br />
-
-    I specialize in Java Full Stack Development with hands-on
-    experience in Spring Boot, React, MySQL, Docker and REST API
-    development. I have worked on projects such as Digital Wallet
-    Systems, Stock Trading Platforms and Health Record Management
-    Systems.
-
-    <br /><br />
-
-    Currently, I am enhancing my skills through internships and
-    practical projects while exploring cloud technologies,
-    DevOps practices and scalable software architecture.
-
-    <br /><br />
-
-    My goal is to start my career as a Software Engineer and
-    contribute to building impactful products that solve
-    real-world challenges.
-  </p>
-</Section>
+      <a
+        href="https://linkedin.com/in/vajrala-yashwanth-reddy"
+        target="_blank"
+        rel="noreferrer"
+      >
+        LinkedIn
+      </a>
+    </div>
+  </div>
+</section>
 
       {/* Skills */}
       <Section title="Technical Skills">
